@@ -1,4 +1,4 @@
-a {
+li.nav-item a {
 	text-decoration: none;
 	color: #777;
 }
@@ -34,7 +34,7 @@ header {
 	display: inline-block;
 	margin: 0px 0px 10px 10px;
 	box-shadow: 1px 1px 1px grey;
-	border-radius: 1px;
+	border-radius: 2px;
 	position: relative;
 }
 
@@ -92,4 +92,37 @@ header {
 	top: 5px;
 	left: 159px;
 	color: #777;
+}
+
+ul.search-result {
+	margin: 20px 0px 20px 120px;
+}
+
+.list-item1, .list-item2, .list-item3 {
+	list-style: none;
+}
+
+li.list-item1 a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #1a0dab;
+	font-size: 18px;
+}
+
+li.list-item1 a:hover {
+	text-decoration: underline;
+}
+
+li.list-item2 a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #006621;;
+	font-size: 14px;
+}
+
+li.list-item3 {
+	font-family: 'Arial', sans-serif;
+	color: #545454;
+	font-size: small;
+	list-style: none;
 }
