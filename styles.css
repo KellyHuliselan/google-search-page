@@ -13,6 +13,12 @@ header {
 	position: relative;
 }
 
+/* footer {
+	background-color: #FAFAFA;
+	width: 100vw;
+	height: 75px;
+} */
+
 .logo {
 	margin: -5px 0px 0px 0px;
 	height: 44px;
@@ -98,7 +104,7 @@ ul.search-result {
 	margin: 20px 0px 20px 120px;
 }
 
-.list-item1, .list-item2, .list-item3 {
+.list-item, .list-item1, .list-item2, .list-item3{
 	list-style: none;
 }
 
@@ -125,4 +131,31 @@ li.list-item3 {
 	color: #545454;
 	font-size: small;
 	list-style: none;
+}
+
+.related-search {
+	margin: 40px 0px 5px 160px;
+	color: #222;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.related-search-links-list1, .related-search-links-list2 {
+	display: inline-block;
+}
+
+.related-search-item {
+	text-decoration: none;
+	font-family: 'arial', sans-serif;
+	color: #1a0dab;
+	font-size: 14px;
+}
+
+.list-item {
+	margin-bottom: 5px;
+}
+
+.related-search-lists {
+	position: absolute;
+	left: 130px;
 }
