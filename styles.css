@@ -13,11 +13,18 @@ header {
 	position: relative;
 }
 
-/* footer {
-	background-color: #FAFAFA;
+footer {
+	background-color: #F2F2F2;
 	width: 100vw;
-	height: 75px;
-} */
+	height: 103px;
+	position: absolute;
+	top: 1375px;
+}
+
+span {
+	color: #aaa;
+	margin-left: 5px;
+}
 
 .logo {
 	margin: -5px 0px 0px 0px;
@@ -182,7 +189,7 @@ li.list-item3 {
 .pagination-gle {
 	display: block;
 	height: 30px;
-	width: 70px;
+	width: 80px;
 	margin-top: 14px;
 }
 
@@ -191,4 +198,37 @@ li.list-item3 {
 	color: #4285f4;
 	font-family: 'Arial', sans-serif;
 	font-size: small;
+}
+
+.footer-item {
+	list-style: none;
+	display:inline-block;
+	color: rgba(0,0,0,.54);
+	font-family: 'Arial', sans-serif;
+	font-size: small;
+	margin-right: 25px;
+}
+
+.footer-item-country {
+	padding: 10px 20px 10px 0px;
+	margin: -10px 0px -10px 0px;
+	border-right: 1px solid #e4e4e4
+}
+
+.footer-list1, .footer-list2 {
+	margin-left: 120px;
+}
+
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #E4E4E4;
+}
+
+span.dot {
+	height: 10px;
+	width: 10px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
 }
