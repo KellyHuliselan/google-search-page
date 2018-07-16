@@ -1,9 +1,7 @@
-/* This stylesheet is organised into 5 sections: styles header, styles search-results,
-styles related search-results, styles pagination and styles footer. Inside those sections
-the declarations are organised in alphabetical order (ignoring the '.').    */
-
-
-/* styles header */
+li.nav-item a {
+	text-decoration: none;
+	color: #777;
+}
 
 header {
 	background-color: #FAFAFA;
@@ -15,25 +13,17 @@ header {
 	position: relative;
 }
 
-.keyword {
+footer {
+	background-color: #F2F2F2;
+	width: 100vw;
+	height: 103px;
 	position: absolute;
-	top: 14px;
-	left: 151px;
-	font-family: 'Arial', sans-serif;
+	top: 1375px;
 }
 
-.login-button {
-	position: absolute;
-	top: 45px;
-	right: 50px;
-	background-color: #1A73E8;
-	padding: 6px 12px 6px 15px;
-	color: white;
-	border-width: 1px;
-	border-style:solid;
-	border-color: #4386FA;
-	font-weight: bold;
-	border-radius: 2px;
+span {
+	color: #aaa;
+	margin-left: 5px;
 }
 
 .logo {
@@ -47,23 +37,6 @@ header {
 	position: relative;
 	top: 27px;
 	left: 6px;
-}
-
-.menu {
-	position: absolute;
-	top: 45px;
-	right: 145px;
-}
-
-.nav-item {
-	display: inline-block;
-	list-style: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
-	margin-right: 30px;
-	position:	relative;
-	top: 15px;
-	left: 120px;
 }
 
 .search {
@@ -92,20 +65,55 @@ header {
 	margin: 0;
 }
 
-.selected {
-	color: #1A73E8;
-	font-weight: bolder;
-}
-
-.selected-bar {
-	height: 3px;
-	width: 45px;
+.login-button {
+	position: absolute;
+	top: 45px;
+	right: 50px;
 	background-color: #1A73E8;
-	margin:16px 0px 0px -3px;;
+	padding: 6px 12px 6px 15px;
+	color: white;
+	border-width: 1px;
+	border-style:solid;
+	border-color: #4386FA;
+	font-weight: bold;
+	border-radius: 2px;
 }
 
+.menu {
+	position: absolute;
+	top: 45px;
+	right: 145px;
+}
 
-/* styles search-results */
+.nav-item {
+	display: inline-block;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	margin-right: 30px;
+	position:	relative;
+	top: 15px;
+	left: 120px;
+}
+
+.search-results {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	margin-right: 30px;
+	position:	relative;
+	top: 5px;
+	left: 159px;
+	color: #777;
+}
+
+ul.search-result {
+	margin: 20px 0px 20px 120px;
+}
+
+.list-item, .list-item1, .list-item2, .list-item3{
+	list-style: none;
+}
 
 li.list-item1 a {
 	text-decoration: none;
@@ -132,33 +140,6 @@ li.list-item3 {
 	list-style: none;
 }
 
-li.nav-item a {
-	text-decoration: none;
-	color: #777;
-}
-
-.list-item, .list-item1, .list-item2, .list-item3{
-	list-style: none;
-}
-
-.search-results {
-	display: inline-block;
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
-	margin-right: 30px;
-	position:	relative;
-	top: 5px;
-	left: 159px;
-	color: #777;
-}
-
-ul.search-result {
-	margin: 20px 0px 20px 120px;
-}
-
-
-/* styles related search-results */
-
 .related-search {
 	margin: 40px 0px 5px 160px;
 	color: #222;
@@ -166,16 +147,19 @@ ul.search-result {
 	font-family: 'Roboto', sans-serif;
 }
 
+.related-search-links-list1, .related-search-links-list2 {
+	display: inline-block;
+}
+
 .related-search-item {
 	text-decoration: none;
 	font-family: 'arial', sans-serif;
 	color: #1a0dab;
 	font-size: 14px;
-	margin-bottom: 5px;
 }
 
-.related-search-links-list1, .related-search-links-list2 {
-	display: inline-block;
+.list-item {
+	margin-bottom: 5px;
 }
 
 .related-search-lists {
@@ -183,13 +167,16 @@ ul.search-result {
 	left: 130px;
 }
 
-
-/* styles pagination */
-
 .pagination {
 	position: absolute;
 	top: 1280px;
 	left: 300px;
+}
+
+.pagination-img {
+	display: block;
+	height: 20px;
+	width: 20px;
 }
 
 .pagination-g {
@@ -206,28 +193,11 @@ ul.search-result {
 	margin-top: 14px;
 }
 
-.pagination-img {
-	display: block;
-	height: 20px;
-	width: 20px;
-}
-
 .pagination-link {
 	text-decoration: none;
 	color: #4285f4;
 	font-family: 'Arial', sans-serif;
 	font-size: small;
-}
-
-
-/* styles footer */
-
-footer {
-	background-color: #F2F2F2;
-	width: 100vw;
-	height: 103px;
-	position: absolute;
-	top: 1375px;
 }
 
 .footer-item {
@@ -255,15 +225,29 @@ hr {
 	border-top: 1px solid #E4E4E4;
 }
 
-span.highlight {
-	color: #aaa;
-	margin-left: 5px;
-}
-
 span.dot {
 	height: 10px;
 	width: 10px;
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
+}
+
+.selected {
+	color: #1A73E8;
+	font-weight: bolder;
+}
+
+.selected-bar {
+	height: 3px;
+	width: 45px;
+	background-color: #1A73E8;
+	margin:16px 0px 0px -3px;;
+}
+
+.keyword {
+	position: absolute;
+	top: 14px;
+	left: 151px;
+	font-family: 'Arial', sans-serif;
 }
