@@ -189,7 +189,7 @@ li.list-item3 {
 .pagination-gle {
 	display: block;
 	height: 30px;
-	width: 80px;
+	width: 75px;
 	margin-top: 14px;
 }
 
@@ -231,4 +231,23 @@ span.dot {
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
+}
+
+.selected {
+	color: #1A73E8;
+	font-weight: bolder;
+}
+
+.selected-bar {
+	height: 3px;
+	width: 45px;
+	background-color: #1A73E8;
+	margin:16px 0px 0px -3px;;
+}
+
+.keyword {
+	position: absolute;
+	top: 14px;
+	left: 151px;
+	font-family: 'Arial', sans-serif;
 }
